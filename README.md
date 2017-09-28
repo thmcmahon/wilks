@@ -17,6 +17,16 @@ lifted normalised across all body weights.
 
 <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/97274a51d2d3213a9ab7f8a98d91fd6eb0c23e81" width="300">
 
+### Installation
+
+There is no way this will ever be uploaded to CRAN. Install and load with the
+following.
+
+```{r}
+devtools::install_github("thmcmahon/wilks")
+library(wilks)
+```
+
 ### Usage
 
 ```{r}
@@ -24,4 +34,4 @@ wilks(83, 450, 'male')
 ```
 ### License
 
-BSD License
+BSD License.
