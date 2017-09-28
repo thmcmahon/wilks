@@ -15,9 +15,7 @@ wilks <- function(body_weight, weight_lifted, gender, unit = 'kg') {
     body_weight <- body_weight / 2.2046226218488
     weight_lifted <- weight_lifted / 2.2046226218488
   }
-  if (unit != 'lbs' | unit != 'kg') {
-    stop("Unit must be either kg or lbs")
-  }
+  stopifnot(unit == 'lbs' | unit == 'kg')
   x <- body_weight
   if (gender == 'male') {
     a <- -216.0475144
